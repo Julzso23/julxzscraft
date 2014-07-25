@@ -6,11 +6,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import eu.julxzs.julxzscraft.proxy.IProxy;
+import eu.julxzs.julxzscraft.reference.Reference;
 
-@Mod(modid = "JulxzsCraft", name = "JulxzsCraft", version = "1.7.10-1.0.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class JulxzsCraft
 {
-	@Mod.Instance("JulxzsCraft")
+	@Mod.Instance(Reference.MOD_ID)
 	public static JulxzsCraft instance;
 
 	@SidedProxy(clientSide = "eu.julxzs.julxzscraft.proxy.ClientProxy", serverSide = "eu.julxzs.julxzscraft.proxy.ServerProxy")
