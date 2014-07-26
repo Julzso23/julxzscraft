@@ -31,7 +31,7 @@ public class ConfigHandler
 		}
 	}
 
-	public static void loadConfig()
+	private static void loadConfig()
 	{
 		testValue = config.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "Example config value");
 
