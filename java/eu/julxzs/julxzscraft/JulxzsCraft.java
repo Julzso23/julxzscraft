@@ -5,11 +5,11 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import eu.julxzs.julxzscraft.config.ConfigHandler;
+import eu.julxzs.julxzscraft.handler.ConfigHandler;
 import eu.julxzs.julxzscraft.proxy.IProxy;
 import eu.julxzs.julxzscraft.reference.Reference;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class JulxzsCraft
 {
 	@Mod.Instance(Reference.MOD_ID)
