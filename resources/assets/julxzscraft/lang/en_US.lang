@@ -1,3 +1,7 @@
 item.julxzscraft:silicon.name=Silicon
+item.julxzscraft:breadSlice.name=Slice of Bread
+item.julxzscraft:toast.name=Toast
+
 tile.julxzscraft:siliconBlock.name=Block of Silicon
+
 itemgroup.julxzscraft=JulxzsCraft
