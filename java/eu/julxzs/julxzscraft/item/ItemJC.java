@@ -2,6 +2,7 @@ package eu.julxzs.julxzscraft.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import eu.julxzs.julxzscraft.creativetab.CreativeTabJC;
 import eu.julxzs.julxzscraft.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ public class ItemJC extends Item
 	public ItemJC()
 	{
 		super();
+		this.setCreativeTab(CreativeTabJC.JC_TAB);
 	}
 
 	@Override
