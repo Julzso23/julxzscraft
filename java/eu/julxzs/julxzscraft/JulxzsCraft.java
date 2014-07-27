@@ -9,6 +9,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import eu.julxzs.julxzscraft.handler.ConfigHandler;
 import eu.julxzs.julxzscraft.init.ModBlocks;
 import eu.julxzs.julxzscraft.init.ModItems;
+import eu.julxzs.julxzscraft.init.Recipes;
 import eu.julxzs.julxzscraft.proxy.IProxy;
 import eu.julxzs.julxzscraft.reference.Reference;
 
@@ -34,6 +35,7 @@ public class JulxzsCraft
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
+		Recipes.init();
 	}
 
 	@Mod.EventHandler
