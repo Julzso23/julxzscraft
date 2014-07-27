@@ -1,4 +1,4 @@
-package eu.julxzs.block;
+package eu.julxzs.julxzscraft.block;
 
 import net.minecraft.block.material.Material;
 
