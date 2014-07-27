@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import eu.julxzs.julxzscraft.handler.ConfigHandler;
+import eu.julxzs.julxzscraft.init.ModBlocks;
 import eu.julxzs.julxzscraft.init.ModItems;
 import eu.julxzs.julxzscraft.proxy.IProxy;
 import eu.julxzs.julxzscraft.reference.Reference;
@@ -27,6 +28,7 @@ public class JulxzsCraft
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
 		ModItems.init();
+		ModBlocks.init();
 	}
 
 	@Mod.EventHandler
