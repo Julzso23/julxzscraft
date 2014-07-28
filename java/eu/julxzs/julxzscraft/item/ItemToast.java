@@ -1,10 +1,10 @@
 package eu.julxzs.julxzscraft.item;
 
-public class ItemToast extends ItemJC
+public class ItemToast extends ItemFoodJC
 {
 	public ItemToast()
 	{
-		super();
+		super(2, false);
 		this.setUnlocalizedName("toast");
 	}
 }
