@@ -9,6 +9,7 @@ public class ModItems
 	public static final ItemJC ironRing = new ItemIronRing();
 	public static final ItemFoodJC breadSlice = new ItemBreadSlice();
 	public static final ItemFoodJC toast = new ItemToast();
+	public static final ItemSwordJC knife = new ItemKnife();
 
 	public static void init()
 	{
@@ -16,5 +17,6 @@ public class ModItems
 		GameRegistry.registerItem(ironRing, "ironRing");
 		GameRegistry.registerItem(breadSlice, "breadSlice");
 		GameRegistry.registerItem(toast, "toast");
+		GameRegistry.registerItem(knife, "knife");
 	}
 }

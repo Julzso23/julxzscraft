@@ -10,6 +10,7 @@ import eu.julxzs.julxzscraft.handler.ConfigHandler;
 import eu.julxzs.julxzscraft.init.ModBlocks;
 import eu.julxzs.julxzscraft.init.ModItems;
 import eu.julxzs.julxzscraft.init.Recipes;
+import eu.julxzs.julxzscraft.init.ToolMaterials;
 import eu.julxzs.julxzscraft.proxy.IProxy;
 import eu.julxzs.julxzscraft.reference.Reference;
 
