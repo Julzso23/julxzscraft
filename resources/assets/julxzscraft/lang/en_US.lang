@@ -9,5 +9,6 @@ item.julxzscraft:toast.name=Toast
 item.julxzscraft:knife.name=Knife
 
 tile.julxzscraft:siliconBlock.name=Block of Silicon
+tile.julxzscraft:bin.name=Bin
 
 itemGroup.julxzscraft=JulxzsCraft

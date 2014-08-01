@@ -1,6 +1,7 @@
 package eu.julxzs.julxzscraft.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import eu.julxzs.julxzscraft.block.BlockBin;
 import eu.julxzs.julxzscraft.block.BlockJC;
 import eu.julxzs.julxzscraft.block.BlockSilicon;
 import eu.julxzs.julxzscraft.reference.Reference;
@@ -9,9 +10,11 @@ import eu.julxzs.julxzscraft.reference.Reference;
 public class ModBlocks
 {
 	public static final BlockJC siliconBlock = new BlockSilicon();
+	public static final BlockJC bin = new BlockBin();
 
 	public static void init()
 	{
 		GameRegistry.registerBlock(siliconBlock, "siliconBlock");
+		GameRegistry.registerBlock(bin, "bin");
 	}
 }
