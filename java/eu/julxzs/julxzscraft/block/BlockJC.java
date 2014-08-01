@@ -7,9 +7,31 @@ import eu.julxzs.julxzscraft.reference.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
 
 public class BlockJC extends Block
 {
+	@SideOnly(Side.CLIENT)
+	public boolean multiSided = false;
+	@SideOnly(Side.CLIENT)
+	public IIcon topIcon;
+	@SideOnly(Side.CLIENT)
+	public IIcon bottomIcon;
+	@SideOnly(Side.CLIENT)
+	public IIcon sideIcon;
+
+	public BlockJC(boolean multiSided)
+	{
+		super(Material.rock);
+		this.setCreativeTab(CreativeTabJC.JC_TAB);
+		this.multiSided = multiSided;
+	}
+	public BlockJC(Material material, boolean multiSided)
+	{
+		super(material);
+		this.setCreativeTab(CreativeTabJC.JC_TAB);
+		this.multiSided = multiSided;
+	}
 	public BlockJC(Material material)
 	{
 		super(material);
@@ -30,7 +52,37 @@ public class BlockJC extends Block
 	@SideOnly(Side.CLIENT)
 	public void registerBlockIcons(IIconRegister iconRegister)
 	{
-		blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+		if (this.multiSided)
+		{
+			topIcon = iconRegister.registerIcon(String.format("%s%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()), "_top"));
+			sideIcon = iconRegister.registerIcon(String.format("%s%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()), "_side"));
+			bottomIcon = iconRegister.registerIcon(String.format("%s%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName()), "_bottom"));
+		} else
+		{
+			blockIcon = iconRegister.registerIcon(String.format("%s", getUnwrappedUnlocalizedName(this.getUnlocalizedName())));
+		}
+	}
+
+	@Override
+	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(int side, int metadata)
+	{
+		if (multiSided)
+		{
+			if (side == 0)
+			{
+				return bottomIcon;
+			} else if (side == 1)
+			{
+				return topIcon;
+			} else
+			{
+				return sideIcon;
+			}
+		} else
+		{
+			return blockIcon;
+		}
 	}
 
 	protected String getUnwrappedUnlocalizedName(String unlocalizedName)
