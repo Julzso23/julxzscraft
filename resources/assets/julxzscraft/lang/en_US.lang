@@ -6,6 +6,7 @@ item.julxzscraft:dough.name=Bread Dough
 item.julxzscraft:butter.name=Butter
 item.julxzscraft:jar.name=Jar
 item.julxzscraft:toast.name=Toast
+item.julxzscraft:butteredToast.name=Buttered Toast
 item.julxzscraft:knife.name=Knife
 
 tile.julxzscraft:siliconBlock.name=Block of Silicon
