@@ -30,7 +30,7 @@ public class Recipes
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " w ", "g g", "ggg", 'w', "plankWood", 'g', "paneGlass"));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butter), Items.milk_bucket.setContainerItem(Items.bucket), ModItems.jar.setContainerItem(ModItems.jar));
 
-		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butteredToast), ModItems.knife.setContainerItem(ModItems.knife), new ItemStack(ModItems.butter), new ItemStack(ModItems.breadSlice));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butteredToast), ModItems.knife.setContainerItem(ModItems.knife), new ItemStack(ModItems.butter), new ItemStack(ModItems.toast));
 	}
 
 	private static void removeRecipesWithResult(ItemStack resultItem)
