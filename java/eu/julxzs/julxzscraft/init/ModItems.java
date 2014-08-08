@@ -13,6 +13,7 @@ public class ModItems
 	public static final ItemJC jar = new ItemJar();
 	public static final ItemFoodJC breadSlice = new ItemBreadSlice();
 	public static final ItemFoodJC toast = new ItemToast();
+	public static final ItemFoodJC butteredToast = new ItemButteredToast();
 	public static final ItemSwordJC knife = new ItemKnife();
 
 	public static void init()
@@ -25,6 +26,7 @@ public class ModItems
 		GameRegistry.registerItem(jar, "jar");
 		GameRegistry.registerItem(breadSlice, "breadSlice");
 		GameRegistry.registerItem(toast, "toast");
+		GameRegistry.registerItem(butteredToast, "butteredToast");
 		GameRegistry.registerItem(knife, "knife");
 	}
 }

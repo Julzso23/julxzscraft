@@ -15,8 +15,10 @@ public class Recipes
 	public static void init()
 	{
 		GameRegistry.addRecipe(new ItemStack(ModBlocks.siliconBlock), "sss", "sss", "sss", 's', new ItemStack(ModItems.silicon));
+
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.ironRing, 4), " i ", "i i", " i ", 'i', "ingotIron"));
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.knife), " i ", "s  ", "   ", 'i', "ingotIron", 's', "stickWood"));
+
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.knife), " i", "s ", 'i', "ingotIron", 's', "stickWood"));
 
 		removeRecipesWithResult(new ItemStack(Items.bread));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.flour), "cropWheat"));
@@ -27,6 +29,8 @@ public class Recipes
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " w ", "g g", "ggg", 'w', "plankWood", 'g', "paneGlass"));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butter), Items.milk_bucket.setContainerItem(Items.bucket), ModItems.jar.setContainerItem(ModItems.jar));
+
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butteredToast), ModItems.knife.setContainerItem(ModItems.knife), new ItemStack(ModItems.butter), new ItemStack(ModItems.breadSlice));
 	}
 
 	private static void removeRecipesWithResult(ItemStack resultItem)
