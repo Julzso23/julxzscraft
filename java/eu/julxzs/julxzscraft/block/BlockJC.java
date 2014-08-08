@@ -22,14 +22,12 @@ public class BlockJC extends Block
 
 	public BlockJC(boolean multiSided)
 	{
-		super(Material.rock);
-		this.setCreativeTab(CreativeTabJC.JC_TAB);
+		this(Material.rock);
 		this.multiSided = multiSided;
 	}
 	public BlockJC(Material material, boolean multiSided)
 	{
-		super(material);
-		this.setCreativeTab(CreativeTabJC.JC_TAB);
+		this(material);
 		this.multiSided = multiSided;
 	}
 	public BlockJC(Material material)

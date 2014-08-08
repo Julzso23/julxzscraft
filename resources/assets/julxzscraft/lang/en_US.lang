@@ -11,5 +11,6 @@ item.julxzscraft:knife.name=Knife
 
 tile.julxzscraft:siliconBlock.name=Block of Silicon
 tile.julxzscraft:bin.name=Bin
+tile.julxzscraft:magnesiumOre.name=Magnesium Ore
 
 itemGroup.julxzscraft=JulxzsCraft

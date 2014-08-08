@@ -6,11 +6,12 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import eu.julxzs.julxzscraft.handler.ConfigHandler;
+import eu.julxzs.julxzscraft.init.ModWorldGen;
 import eu.julxzs.julxzscraft.init.ModBlocks;
 import eu.julxzs.julxzscraft.init.ModItems;
 import eu.julxzs.julxzscraft.init.Recipes;
-import eu.julxzs.julxzscraft.init.ToolMaterials;
 import eu.julxzs.julxzscraft.proxy.IProxy;
 import eu.julxzs.julxzscraft.reference.Reference;
 
@@ -37,6 +38,7 @@ public class JulxzsCraft
 	public void Init(FMLInitializationEvent event)
 	{
 		Recipes.init();
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 1);
 	}
 
 	@Mod.EventHandler
