@@ -23,14 +23,16 @@ public class Recipes
 		removeRecipesWithResult(new ItemStack(Items.bread));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.flour), "cropWheat"));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.dough), Items.water_bucket.setContainerItem(Items.bucket), new ItemStack(ModItems.flour), new ItemStack(ModItems.flour), new ItemStack(ModItems.flour));
-		GameRegistry.addSmelting(new ItemStack(ModItems.dough), new ItemStack(Items.bread), 0);
+		GameRegistry.addSmelting(new ItemStack(ModItems.dough), new ItemStack(Items.bread), 1);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.breadSlice, 5), new ItemStack(Items.bread), ModItems.knife.setContainerItem(ModItems.knife));
-		GameRegistry.addSmelting(new ItemStack(ModItems.breadSlice), new ItemStack(ModItems.toast), 0);
+		GameRegistry.addSmelting(new ItemStack(ModItems.breadSlice), new ItemStack(ModItems.toast), 1);
 
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.jar), " w ", "g g", "ggg", 'w', "plankWood", 'g', "paneGlass"));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butter), Items.milk_bucket.setContainerItem(Items.bucket), ModItems.jar.setContainerItem(ModItems.jar));
 
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.butteredToast), ModItems.knife.setContainerItem(ModItems.knife), new ItemStack(ModItems.butter), new ItemStack(ModItems.toast));
+
+		GameRegistry.addSmelting(new ItemStack(ModBlocks.magnesiumOre), new ItemStack(ModItems.magnesiumIngot), 1);
 	}
 
 	private static void removeRecipesWithResult(ItemStack resultItem)

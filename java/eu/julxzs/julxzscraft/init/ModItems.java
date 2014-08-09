@@ -11,6 +11,7 @@ public class ModItems
 	public static final ItemJC dough = new ItemDough();
 	public static final ItemJC butter = new ItemButter();
 	public static final ItemJC jar = new ItemJar();
+	public static final ItemJC magnesiumIngot = new ItemMagnesiumIngot();
 	public static final ItemFoodJC breadSlice = new ItemBreadSlice();
 	public static final ItemFoodJC toast = new ItemToast();
 	public static final ItemFoodJC butteredToast = new ItemButteredToast();
@@ -24,6 +25,7 @@ public class ModItems
 		GameRegistry.registerItem(dough, "dough");
 		GameRegistry.registerItem(butter, "butter");
 		GameRegistry.registerItem(jar, "jar");
+		GameRegistry.registerItem(magnesiumIngot, "magnesiumIngot");
 		GameRegistry.registerItem(breadSlice, "breadSlice");
 		GameRegistry.registerItem(toast, "toast");
 		GameRegistry.registerItem(butteredToast, "butteredToast");
