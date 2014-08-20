@@ -1,3 +1,4 @@
+# Items
 item.julxzscraft:silicon.name=Silicon
 item.julxzscraft:ironRing.name=Iron Ring
 item.julxzscraft:breadSlice.name=Slice of Bread
@@ -10,8 +11,14 @@ item.julxzscraft:toast.name=Toast
 item.julxzscraft:butteredToast.name=Buttered Toast
 item.julxzscraft:knife.name=Knife
 
+# Blocks
 tile.julxzscraft:siliconBlock.name=Block of Silicon
 tile.julxzscraft:bin.name=Bin
 tile.julxzscraft:magnesiumOre.name=Magnesium Ore
 
+# Creative Tabs
 itemGroup.julxzscraft=JulxzsCraft
+
+# Keys
+keys.julxzscraft.category=JulxzsCraft
+keys.julxzscraft.test=Test

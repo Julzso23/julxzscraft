@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import eu.julxzs.julxzscraft.client.handler.KeyInputEventHandler;
 import eu.julxzs.julxzscraft.handler.ConfigHandler;
 import eu.julxzs.julxzscraft.init.*;
 import eu.julxzs.julxzscraft.proxy.IProxy;
@@ -27,6 +28,8 @@ public class JulxzsCraft
 		ConfigHandler.init(event.getSuggestedConfigurationFile());
 		FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
+		proxy.registerKeyBindings();
+
 		ModItems.init();
 		ModBlocks.init();
 	}
@@ -34,9 +37,12 @@ public class JulxzsCraft
 	@Mod.EventHandler
 	public void Init(FMLInitializationEvent event)
 	{
+		FMLCommonHandler.instance().bus().register(new KeyInputEventHandler());
+
 		ModOreDictionary.init();
-		Recipes.init();
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 1);
+
+		Recipes.init();
 	}
 
 	@Mod.EventHandler
